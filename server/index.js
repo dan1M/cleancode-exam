@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 
 const UserRouter = require('./routes/user');
 const TagRouter = require('./routes/tag');
@@ -23,7 +24,7 @@ app.use('/tags', TagRouter);
 app.use('/cards', CardRouter);
 app.use('/responses', ResponseRouter);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
