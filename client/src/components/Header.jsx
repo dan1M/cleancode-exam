@@ -13,6 +13,9 @@ const Header = () => {
                     <Button as={RouterLink} to="/quiz" colorScheme="white" variant="outline" mr={2}>
                         Questionnaire
                     </Button>
+                    <Button as={RouterLink} to="/cards" colorScheme="white" variant="outline">
+                        Fiches
+                    </Button>
                 </Flex>
             </Flex>
         </Box>

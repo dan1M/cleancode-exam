@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Home} from "@/components/Home/Home.jsx";
 import Create from "@/components/Card/Create.jsx";
 import Quiz from "@/components/Quiz.jsx";
+import ListCard from "@/components/Card/ListCard.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route index element={<Home />} />
                         <Route path={"create-card"} element={<Create />} />
                         <Route path="quiz" element={<Quiz />} />
+                        <Route path={"cards"} element={<ListCard />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

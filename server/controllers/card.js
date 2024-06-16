@@ -49,6 +49,7 @@ module.exports = function CardController(CardService) {
             try {
                 const cardId = req.body.cardId;
                 const tagId = req.body.tagId;
+                console.log(cardId, tagId);
                 const cardTag = await CardService.addTagsByCard(cardId, tagId);
                 return res.status(201).json(cardTag);
             } catch (error) {
