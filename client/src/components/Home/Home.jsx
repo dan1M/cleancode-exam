@@ -2,6 +2,7 @@ import {Box, Button, Flex, Text} from "@chakra-ui/react";
 import {Link as RouterLink} from "react-router-dom";
 
 export const Home = () => {
+
     return (
         <>
             <Flex flexDir="column" h={'full'} mx={"auto"} maxWidth={"1600px"} minHeight={"1000px"}>

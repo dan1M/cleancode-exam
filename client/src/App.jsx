@@ -5,6 +5,8 @@ import Footer from "@/components/Footer.jsx";
 import {Home} from "@/components/Home/Home.jsx";
 
 function App() {
+    localStorage.setItem("userId", 1)
+
     return (
         <>
             <Header />

@@ -211,6 +211,7 @@ module.exports = function CardService() {
                 group: ["cardId"],
             });
 
+
             const categoryDelays = {
                 FIRST: 1,
                 SECOND: 2,
@@ -228,6 +229,7 @@ module.exports = function CardService() {
                 const card = await Card.findByPk(response.cardId);
                 if (!card) continue;
 
+                console.log("card", card);
                 const timeDifference = Math.floor(
                     (new Date(date) - response.dataValues.lastResponseDate) /
                         (1000 * 60 * 60 * 24)
