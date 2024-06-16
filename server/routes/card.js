@@ -1,6 +1,6 @@
 const genericRouter = require("./generic");
 const genericController = require("../controllers/generic");
-const cardController = require("../controllers/Card");
+const cardController = require("../controllers/card");
 const CardService = require("../services/card");
 
 module.exports = new genericRouter(

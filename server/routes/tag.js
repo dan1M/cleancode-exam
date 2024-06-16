@@ -1,7 +1,7 @@
 const genericRouter = require("./generic");
 const genericController = require("../controllers/generic");
 const TagService = require("../services/tag");
-const tagController = require("../controllers/Tag");
+const tagController = require("../controllers/tag");
 
 module.exports = new genericRouter(
     new genericController(new TagService(), {
