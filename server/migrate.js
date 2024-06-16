@@ -1,4 +1,4 @@
-import db from './models/index.js';
+const db = require('./db/models');
 
 const connection = db.connection;
 

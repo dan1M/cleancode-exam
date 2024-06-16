@@ -2,7 +2,6 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest --watchAll --verbose",
     "dev": "nodemon -r dotenv/config index.js dotenv_config_path=.env",
